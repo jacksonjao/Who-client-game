@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d3d3"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jacksonjao.jhon.who.Interaccion">
+
+    <ImageView
+        android:id="@+id/iv_users"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/rl_cards"
+        android:layout_margin="5dp"
+        android:background="@drawable/usuario_numero" />
+
+
+    <TextView
+        android:id="@+id/tv_users"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignTop="@+id/iv_users"
+        android:layout_toRightOf="@+id/iv_users"
+        android:text="3"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_users"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Encuentra las parejas"
+        android:textColor="#595959"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_cards"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="98dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_cardUno"
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_margin="4dp"
+            android:background="@drawable/card"
+            android:clickable="false"
+            android:onClick="uno" />
+
+        <ImageView
+            android:id="@+id/iv_cardDos"
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardUno"
+            android:background="@drawable/card"
+            android:onClick="dos" />
+
+        <ImageView
+            android:id="@+id/iv_cardTres"
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardDos"
+            android:background="@drawable/card"
+            android:onClick="tres" />
+
+        <ImageView
+            android:id="@+id/iv_cardCuatro"
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardTres"
+            android:background="@drawable/card"
+            android:onClick="cuatro" />
+
+        <ImageView
+            android:id="@+id/iv_cardCinco"
+
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_below="@+id/iv_cardUno"
+            android:layout_margin="4dp"
+            android:background="@drawable/card"
+            android:onClick="cinco" />
+
+        <ImageView
+            android:id="@+id/iv_cardSeis"
+
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_below="@+id/iv_cardUno"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardCinco"
+            android:background="@drawable/card"
+            android:onClick="seis" />
+
+        <ImageView
+            android:id="@+id/iv_cardSiete"
+
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_below="@+id/iv_cardUno"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardSeis"
+            android:background="@drawable/card"
+            android:onClick="siete" />
+
+        <ImageView
+            android:id="@+id/iv_cardOcho"
+
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_below="@+id/iv_cardUno"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardSiete"
+            android:background="@drawable/card"
+            android:onClick="ocho" />
+
+        <ImageView
+            android:id="@+id/iv_cardNueve"
+
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_below="@+id/iv_cardCinco"
+            android:layout_margin="4dp"
+            android:background="@drawable/card"
+            android:onClick="nueve" />
+
+        <ImageView
+            android:id="@+id/iv_cardDiez"
+
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_below="@+id/iv_cardCinco"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardNueve"
+            android:background="@drawable/card"
+            android:onClick="diez" />
+
+        <ImageView
+            android:id="@+id/iv_cardOnce"
+
+
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_below="@+id/iv_cardCinco"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardDiez"
+            android:background="@drawable/card"
+            android:onClick="once" />
+
+        <ImageView
+            android:id="@+id/iv_cardDoce"
+
+            android:layout_width="@dimen/ancho_card"
+            android:layout_height="@dimen/alto_card"
+            android:layout_below="@+id/iv_cardCinco"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/iv_cardOnce"
+            android:background="@drawable/card"
+            android:onClick="doce" />
+
+      <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="5dp"
+            android:onClick="doce"
+            android:text="00:00:000"
+            android:textColor="#0000"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_miUser"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff1f5f"
+        android:elevation="40dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_yo"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/usuario_name" />
+
+        <TextView
+            android:id="@+id/tv_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_yo"
+            android:text="Usuario"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

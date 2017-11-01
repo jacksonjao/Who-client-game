@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d3d3"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jacksonjao.jhon.who.Ip"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="120dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/logo" />
+
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/boton_texto"
+        android:hint="ip servidor"
+        android:textAlignment="center"
+
+        android:textColor="#FF8B8686"
+        android:textColorHint="#FF8B8686" />
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/et_ip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton"
+        android:onClick="entrar"
+        android:text="Entrar"
+        android:textAlignment="center"
+        android:textColor="#fefefe"
+        android:translationZ="5dp" />
+
+</RelativeLayout>
